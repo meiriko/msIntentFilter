@@ -30,7 +30,9 @@
         <title>Hello World</title>
         <script type="text/javascript">
 			function handleOpenURL(url) {
-				alert("received url: " + url);
+				setTimeout(function(){
+					alert("x received url: " + url);
+				}, 3000);
 			}
 		</script>
     </head>
