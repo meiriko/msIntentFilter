@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="in.tlvp.msif" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="in.tlvp.msif" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>msIntentFilter</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -68,7 +68,12 @@
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="*" />
+	<!--
 	<gap:url-scheme name="in.tlvp.msif" role="None">
 		<scheme>msif</scheme>
 	</gap:url-scheme>
+	-->
+	<gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
+	    <param name="URL_SCHEME" value="msif" />
+	</gap:plugin>
 </widget>
