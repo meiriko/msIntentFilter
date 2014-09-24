@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="in.tlvp.msif" version="1.0.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="in.tlvp.msif" version="1.0.10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>msIntentFilter</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -73,7 +73,18 @@
 		<scheme>msif</scheme>
 	</gap:url-scheme>
 	-->
+<!--
 	<gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
 	    <param name="URL_SCHEME" value="msif" />
 	</gap:plugin>
+-->
+	<plugin name="LaunchMyApp" value="nl.xservices.plugins.LaunchMyApp"/>
+	<gap:config-file platform="android" parent="/manifest/application/activity">
+		<intent-filter>
+		  <data android:scheme="msix"/>
+		  <action android:name="android.intent.action.VIEW" />
+		  <category android:name="android.intent.category.DEFAULT" />
+		  <category android:name="android.intent.category.BROWSABLE" />
+		</intent-filter>
+	</gap:config-file>
 </widget>
