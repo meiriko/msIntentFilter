@@ -81,10 +81,10 @@
 	<plugin name="LaunchMyApp" value="nl.xservices.plugins.LaunchMyApp"/>
 	<gap:config-file platform="android" parent="/manifest/application/activity">
 		<intent-filter>
-		  <data android:scheme="msix"/>
-		  <action android:name="android.intent.action.VIEW" />
-		  <category android:name="android.intent.category.DEFAULT" />
-		  <category android:name="android.intent.category.BROWSABLE" />
+		  <data scheme="msix"/>
+		  <action name="android.intent.action.VIEW" />
+		  <category name="android.intent.category.DEFAULT" />
+		  <category name="android.intent.category.BROWSABLE" />
 		</intent-filter>
 	</gap:config-file>
 </widget>
