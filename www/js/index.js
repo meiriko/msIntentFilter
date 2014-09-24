@@ -28,9 +28,11 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
+	/*
 	handleOpenURL function(url){
 		alert('p0: ' + url);
 	},
+	*/
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
